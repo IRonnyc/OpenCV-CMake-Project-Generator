@@ -1,8 +1,14 @@
 # OpenCV-CMake-Project-Generator
 Generates CMakeList.txt and main.cpp for OpenCV projects
 
+Only tested on Linux 
+
 Use:
 ocvCMake -c|-cpp [C/C++ Standard (Optional)] -cmp [Compilername] -d [Target directory] -n [Projectname]
+
+E.g 
+ocvCMake -cpp c++1z -cm clang++ -d ~/projects/test -n TestProject
+
 
 -c|-cpp and -cmp are optional parameters
 If not specified the application will generate cpp projects.
