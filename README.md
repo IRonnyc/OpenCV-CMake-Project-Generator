@@ -1,6 +1,7 @@
 # OpenCV-CMake-Project-Generator
 Generates CMakeList.txt and main.cpp for OpenCV projects
 
+Compile with C++17 or modify parameter.cpp
 Only tested on Linux 
 
 Use:
