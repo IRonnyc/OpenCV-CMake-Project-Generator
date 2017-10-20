@@ -15,6 +15,7 @@
 std::string getCMake(const char *name, bool useCpp, const char *compiler, const char *standard) {
     std::string cmake = "";
 
+    std::cout << "Compiler:" << compiler << '\n';
     if(strcmp(compiler, "") != 0) {
         cmake += "set(CMAKE_";
         cmake += (useCpp ? "CXX" : "C");
@@ -23,6 +24,7 @@ std::string getCMake(const char *name, bool useCpp, const char *compiler, const 
         cmake += "\")\n";
     }
 
+    std::cout << "Standard: " << standard << '\n';
     if(strcmp(standard, "") != 0) {
         cmake += "set(CMAKE_";
         cmake += (useCpp ? "CXX" : "C");
